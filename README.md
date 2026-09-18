@@ -23,17 +23,17 @@ This sample is intentionally minimal — designed to be easy to read, easy to ru
 ## 📁 Repository structure
 
 ```
-    repo/
+    entra-eventhandlers-azurefunctions/
         EmailOtpSend.http        # Sample request for local testing
         LICENSE                  # MIT License
         README.md                # This file
         src/
-        Entra.EventHandlers.AzureFunctions.Sample/
-            Program.cs
-            host.json
-            EmailOtpSendFunction.cs
-            Handlers/
-            Services/
+            Entra.EventHandlers.AzureFunctions.Sample/
+                Program.cs
+                host.json
+                EmailOtpSendFunction.cs
+                Handlers/
+                Services/
 ```
 
 ---
