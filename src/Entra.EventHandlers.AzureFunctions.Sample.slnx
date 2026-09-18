@@ -8,4 +8,7 @@
   <Folder Name="/src/">
     <Project Path="Entra.EventHandlers.AzureFunctions.Sample/Entra.EventHandlers.AzureFunctions.Sample.csproj" />
   </Folder>
+  <Folder Name="/tests/">
+    <Project Path="../tests/Entra.EventHandlers.AzureFunctions.Sample.UnitTests/Entra.EventHandlers.AzureFunctions.Sample.UnitTests.csproj" />
+  </Folder>
 </Solution>

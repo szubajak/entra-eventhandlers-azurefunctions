@@ -33,7 +33,13 @@ This sample is intentionally minimal — designed to be easy to read, easy to ru
                 host.json
                 EmailOtpSendFunction.cs
                 Handlers/
+                    EmailOtpSendHandler.cs
                 Services/
+                    ConsoleEmailSender.cs
+        tests/
+            Entra.EventHandlers.AzureFunctions.Sample.Tests/
+                Handlers/
+                    EmailOtpSendHandlerTests.cs
 ```
 
 ---
@@ -88,6 +94,29 @@ You should see the handler execute and the sample `ConsoleEmailSender` log outpu
 - `Microsoft.Azure.Functions.Worker.Sdk`
 
 Telemetry packages are intentionally **not** included to keep the sample minimal.
+
+---
+
+## 🧪 Unit tests
+
+This sample includes a small xUnit test project that demonstrates how to unit‑test an Entra External ID handler.
+
+The tests show how to:
+
+- mock dependencies using NSubstitute  
+- verify that the handler invokes `IEmailSender`  
+- assert the response structure using FluentAssertions  
+- validate the exception path via `EntraHandlerResult.HasException`
+
+The Azure Function itself is not unit‑tested, as the function only acts as an adapter. The handler is the primary unit of logic.
+
+---
+
+## 🔗 Related projects
+
+For more advanced scenarios and the full Entra Event Handlers ecosystem, see:
+
+https://github.com/szubajak/entra-event-handlers
 
 ---
 
