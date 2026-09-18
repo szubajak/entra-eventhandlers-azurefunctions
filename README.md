@@ -21,6 +21,8 @@ This sample is intentionally minimal — designed to be easy to read, easy to ru
 ---
 
 ## 📁 Repository structure
+
+```
     repo/
         EmailOtpSend.http        # Sample request for local testing
         LICENSE                  # MIT License
@@ -32,28 +34,31 @@ This sample is intentionally minimal — designed to be easy to read, easy to ru
             EmailOtpSendFunction.cs
             Handlers/
             Services/
+```
 
 ---
 
 ## ▶️ Running the sample locally
 
 1. Install Azure Functions Core Tools  
-2. Navigate to the sample project folder        
+2. Navigate to the sample project folder  
 3. Run:
-    func start
+    `func start`
 
 The function will start on http://localhost:7073.
 
-## Test the EmailOtpSend handler
+---
 
-Use the included EmailOtpSend.http file (located in the repo root).  
+## 🧪 Test the EmailOtpSend handler
+
+Use the included `EmailOtpSend.http` file (located in the repo root).  
 If you use VS Code or Visual Studio, you can simply click “Send Request”.
 
 Example request:
 
+```
     POST http://localhost:7073/api/emailotpsend
     Content-Type: application/json
-
     {
       "type": "microsoft.graph.authenticationEvent.emailOtpSend",
       "source": "source",
@@ -68,24 +73,31 @@ Example request:
         }
       }
     }
+```
 
-You should see the handler execute and the sample ConsoleEmailSender log output.
+You should see the handler execute and the sample `ConsoleEmailSender` log output.
 
-## Dependencies used
+---
 
-- Entra.EventHandlers  
-- Entra.EventHandlers.AzureFunctions  
-- Microsoft.Azure.Functions.Worker  
-- Microsoft.Azure.Functions.Worker.Extensions.Http.AspNetCore  
-- Microsoft.Azure.Functions.Worker.Sdk  
+## 📦 Dependencies used
 
-Telemetry packages are intentionally not included to keep the sample minimal.
+- `Entra.EventHandlers`
+- `Entra.EventHandlers.AzureFunctions`
+- `Microsoft.Azure.Functions.Worker`
+- `Microsoft.Azure.Functions.Worker.Extensions.Http.AspNetCore`
+- `Microsoft.Azure.Functions.Worker.Sdk`
 
-## License
+Telemetry packages are intentionally **not** included to keep the sample minimal.
+
+---
+
+## 📄 License
 
 This project is licensed under the MIT License.  
 See the LICENSE file for details.
 
-## Feedback
+---
+
+## 💬 Feedback
 
 If you have ideas for improving the sample or want additional examples (router function, multi-event hosting, advanced exception handling), feel free to open an issue or contribute.
