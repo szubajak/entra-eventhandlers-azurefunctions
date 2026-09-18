@@ -1,0 +1,20 @@
+### EmailOtpSend sample request
+### Run this to test the EmailOtpSendFunction locally
+
+POST http://localhost:7029/api/emailotpsend
+Content-Type: application/json
+
+{
+  "type": "microsoft.graph.authenticationEvent.emailOtpSend",
+  "source": "source",
+  "data": {
+    "@odata.type": "microsoft.graph.onOtpSendCalloutData",
+    "otpContext": {
+      "identifier": "someone@example.com",
+      "oneTimeCode": "12345678"
+    },
+    "authenticationContext": {
+      "correlationId": "00000000-0000-1111-2222-000000000000"
+    }
+  }
+}

@@ -1,0 +1,11 @@
+<Solution>
+  <Folder Name="/Solution Items/">
+    <File Path="../.gitignore" />
+    <File Path="../EmailOtpSend.http" />
+    <File Path="../LICENSE" />
+    <File Path="../README.md" />
+  </Folder>
+  <Folder Name="/src/">
+    <Project Path="Entra.EventHandlers.AzureFunctions.Sample/Entra.EventHandlers.AzureFunctions.Sample.csproj" />
+  </Folder>
+</Solution>

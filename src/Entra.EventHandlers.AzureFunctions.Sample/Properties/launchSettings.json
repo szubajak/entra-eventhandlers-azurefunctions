@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "Entra.EventHandlers.AzureFunctions.Sample": {
+      "commandName": "Project",
+      "commandLineArgs": "--port 7029",
+      "launchBrowser": false
+    }
+  }
+}
