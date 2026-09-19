@@ -2,8 +2,6 @@
 
 This sample demonstrates how to host **Microsoft Entra External ID Authentication Event Handlers** in **Azure Functions (Isolated Worker)** using the `Entra.EventHandlers` ecosystem.
 
-A version of this sample is also published in the official **Azure‑Samples** organization.
-
 ---
 
 ## 🚀 What this sample shows

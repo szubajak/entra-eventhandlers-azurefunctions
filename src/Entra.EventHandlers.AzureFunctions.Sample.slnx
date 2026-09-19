@@ -1,4 +1,7 @@
 <Solution>
+  <Folder Name="/.github/">
+    <File Path="../.github/social_preview.png" />
+  </Folder>
   <Folder Name="/Solution Items/">
     <File Path="../.gitignore" />
     <File Path="../EmailOtpSend.http" />
